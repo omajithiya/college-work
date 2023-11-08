@@ -13,6 +13,9 @@
         android:theme="@style/Theme.RedSquare"
         tools:targetApi="33">
         <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".Registration"
             android:exported="false" />
         <activity
