@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-
+    android:background="@drawable/gradiyant"
     tools:context=".StartPage">
 
     <androidx.cardview.widget.CardView
@@ -34,71 +34,95 @@
                 android:textStyle="bold"
                 android:textColor="#8692f7"/>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:id="@+id/name"
-                android:background="@drawable/costom_edittext"
-                android:drawableLeft="@drawable/name_prof"
+                app:startIconDrawable="@drawable/name_prof"
                 android:hint="Name"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="#424242"
-                android:layout_marginTop="40dp"/>
+                android:layout_marginTop="2dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:ems="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-
-            <EditText
-                android:id="@+id/gender"
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/costom_edittext"
-                android:drawableLeft="@drawable/gender_icon"
+                android:layout_height="match_parent"
+                android:id="@+id/Gender"
+                app:startIconDrawable="@drawable/gender_icon"
                 android:hint="Gender"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="#424242"
+                android:layout_marginTop="2dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:ems="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-                />
-
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:id="@+id/username"
-                android:background="@drawable/costom_edittext"
-                android:drawableLeft="@drawable/person_24"
+                app:startIconDrawable="@drawable/person_24"
                 android:hint="User Name"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="#424242"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="2dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:ems="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
+
+
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:id="@+id/password"
-                android:background="@drawable/costom_edittext"
-                android:drawableLeft="@drawable/lock_24"
                 android:hint="Password"
+                app:startIconDrawable="@drawable/lock_24"
                 android:padding="8dp"
                 android:inputType="textPassword"
                 android:textColor="@color/black"
                 android:textColorHighlight="#424242"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="2dp">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:ems="15"/>
+            </com.google.android.material.textfield.TextInputLayout>
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="match_parent"
                 android:id="@+id/confirm_password"
-                android:background="@drawable/costom_edittext"
-                android:drawableLeft="@drawable/lock_24"
-                android:drawableRight="@drawable/eye_show"
                 android:hint="Confirm Password"
-                android:padding="8dp"
-                android:inputType="textPassword"
-                android:textColor="@color/black"
+                app:passwordToggleEnabled="true"
+                app:startIconDrawable="@drawable/lock_24"
                 android:textColorHighlight="#424242"
-                android:layout_marginTop="20dp"/>
+                android:padding="8dp"
+                android:layout_marginTop="2dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:ems="15"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <Button
                 android:layout_width="match_parent"
