@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class StartPage extends AppCompatActivity {
 
     EditText username,password;
-    TextView linkclick;
+    TextView linkclick,click;
     Button loginBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +25,7 @@ public class StartPage extends AppCompatActivity {
         password=(EditText) findViewById(R.id.password);
         loginBtn=(Button) findViewById(R.id.loginBtn);
         linkclick=(TextView) findViewById(R.id.signupText);
+        click=(TextView) findViewById(R.id.gifclick);
 
         loginBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +43,13 @@ public class StartPage extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(getApplicationContext(),Registration.class));
+            }
+        });
+
+        click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LodingActivity.class));
             }
         });
     }
