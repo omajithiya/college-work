@@ -31,7 +31,7 @@ public class StartPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (username.getText().toString().equals("om")&&password.getText().toString().equals("1234")){
-                    startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(), LodingActivity.class));
                 } else {
                     Toast.makeText(getApplicationContext(), "Login Fail", Toast.LENGTH_LONG).show();
                 }
