@@ -50,21 +50,23 @@
                     android:inputType="text"
                     android:ems="15"/>
             </com.google.android.material.textfield.TextInputLayout>
-
+            
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:id="@+id/Gender"
                 app:startIconDrawable="@drawable/gender_icon"
-                android:hint="Gender"
+                android:hint="@string/select"
                 android:padding="8dp"
                 android:textColor="@color/black"
                 android:textColorHighlight="#424242"
-                android:layout_marginTop="2dp">
-                <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginTop="2dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">>
+                <AutoCompleteTextView
+                    android:id="@+id/auto_Complete_text"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:inputType="text"
+                    android:inputType="none"
                     android:ems="15"/>
             </com.google.android.material.textfield.TextInputLayout>
 
