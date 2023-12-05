@@ -37,7 +37,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/name"
                 app:startIconDrawable="@drawable/name_prof"
                 android:hint="Name"
                 android:padding="8dp"
@@ -46,6 +45,7 @@
                 android:layout_marginTop="2dp">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
+                    android:id="@+id/reg_name"
                     android:layout_height="match_parent"
                     android:inputType="text"
                     android:ems="15"/>
@@ -54,7 +54,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/Gender"
                 app:startIconDrawable="@drawable/gender_icon"
                 android:hint="@string/select"
                 android:padding="8dp"
@@ -73,7 +72,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/username"
                 app:startIconDrawable="@drawable/person_24"
                 android:hint="User Name"
                 android:padding="8dp"
@@ -83,6 +81,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/reg_username"
                     android:inputType="text"
                     android:ems="15"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -92,7 +91,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/password"
                 android:hint="Password"
                 app:startIconDrawable="@drawable/lock_24"
                 android:padding="8dp"
@@ -103,6 +101,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/reg_password"
                     android:inputType="textPassword"
                     android:ems="15"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -110,7 +109,6 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/confirm_password"
                 android:hint="Confirm Password"
                 app:passwordToggleEnabled="true"
                 app:startIconDrawable="@drawable/lock_24"
@@ -121,6 +119,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:id="@+id/regconfirm_password"
                     android:inputType="textPassword"
                     android:ems="15"/>
 
@@ -129,7 +128,7 @@
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
-                android:id="@+id/loginBtn"
+                android:id="@+id/RegistrationBtn"
                 android:text="REGISTER"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"

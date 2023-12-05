@@ -13,13 +13,18 @@
         android:theme="@style/Theme.RedSquare"
         tools:targetApi="33">
         <activity
+            android:name=".forget_password"
+            android:exported="false" />
+        <activity
+            android:name=".demo"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".LodingActivity"
             android:exported="false" />
-
         <activity
             android:name=".Registration"
             android:exported="false" />

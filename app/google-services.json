@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "18848403691",
+    "project_id": "red-square-afb88",
+    "storage_bucket": "red-square-afb88.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18848403691:android:32d9e2c1c703a62697aeae",
+        "android_client_info": {
+          "package_name": "com.example.redsquare"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGo6BPwUBLtzTlqnzq3XG3NqiLbM5lmWs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
